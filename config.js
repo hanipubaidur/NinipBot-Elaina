@@ -26,7 +26,7 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 global.sig = 'https://instagram.com/nip.niff' //instagram
 global.sgh = 'https://github.com/hanipubaidur' //github
-global.sgc = 'https://chat.whatsapp.com/KLyYt1brvfPFaO6RA5E9Lg' //group whatsapp
+global.sgc = 'https://chat.whatsapp.com/FsmBsK2CZLUJ0OBbQt7p2r' //group whatsapp
 global.saluran = 'https://whatsapp.com/channel/0029VaRtX6d2ER6gTjBuLc2Y' //saluran whatsapp
 global.syt = 'https://www.youtube.com/@ythmg' //youtube
 global.swa = 'https://wa.me/6282183478561' //whatsapp
@@ -66,7 +66,7 @@ global.apikey = 'plta_xxxxx' //plta
 global.lolkey = 'GataDios'
 global.xkey = 'd90a9e986e18778b'
 global.xzn = 'konekocyz'
-global.lann = 'isi apikey lann'
+global.lann = 'ninipbot.betabotz'
 global.xyro = '3WIq7q3CWt'
 
 /*============== API ==============*/
@@ -83,7 +83,7 @@ global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.lolhuman.xyz': 'GataDios', //lolhuman
   'https://skizo.tech': 'konekocyz', //skizo
-  'https://api.betabotz.eu.org': 'isi apikey lann', //betabotz
+  'https://api.betabotz.eu.org': 'ninipbot.betabotz', //betabotz
   'https://api.xyroinee.xyz': '3WIq7q3CWt' //xyroine
 }
 
