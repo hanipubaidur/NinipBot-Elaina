@@ -35,7 +35,7 @@ async function fakechat(text, name, url) {
     let body = {
         "type": "quote",
         "format": "webp",
-        "backgroundColor": "#000000",
+        "backgroundColor": "#FFFFFF",
         "width": 512,
         "height": 512,
         "scale": 2,
@@ -53,7 +53,7 @@ async function fakechat(text, name, url) {
         "replyMessage": {}
         }]
     }
-    let res = await axios.post('https://btzqc.betabotz.eu.org/generate', body);
+    let res = await axios.post('https://quotly.netorare.codes/generate', body);
     return Buffer.from(res.data.result.image, "base64");
 }
 
@@ -82,7 +82,7 @@ async function fakechatImg(url, text, name, avatar) {
         "replyMessage": {}
         }]
     }
-    let res = await axios.post('https://btzqc.betabotz.eu.org/generate', body);
+    let res = await axios.post('https://quotly.netorare.codes/generate', body);
     return Buffer.from(res.data.result.image, "base64");
 }
 
