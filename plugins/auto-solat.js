@@ -4,14 +4,14 @@ export async function before(m) {
   const id = m.chat;
 
   const jadwalSholat = {
-    Imsyak: "04:18",
-    Subuh: "04:28-05:00",
-    Terbit: "05:43",
-    Dhuha: "06:07-7:37",
-    Dzuhur: "11:43-12:41",
-    Ashar: "15:04-16:02",
-    Maghrib: "17:40-18:38",
-    Isha: "18:51-19:59",
+    Imsyak: "04:00",
+    Subuh: "04:12-05:24",
+    Terbit: "05:24",
+    Dhuha: "05:48-09:00",
+    Dzuhur: "11:32-14:13",
+    Ashar: "14:43-17:06",
+    Maghrib: "17:36-18:15",
+    Isha: "18:45-22.00",
   };
 
   const date = new Date();

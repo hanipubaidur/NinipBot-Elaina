@@ -1,6 +1,4 @@
-//By indra ganteng 
-
- import axios from 'axios';
+import axios from 'axios';
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
   if (!text) throw `Use ${usedPrefix + command} 12345678`;

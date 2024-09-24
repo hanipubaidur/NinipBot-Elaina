@@ -9,7 +9,7 @@ handler.before = async (m, {text}) => {
         if (!m.text) return
         last.push += m.text
         await fetch(
-			`https://api.yanzbotz.my.id/api/ai/characterai?text=${text}, ${last[0]}&name=Dinda putri angelista`,
+			`https://api.yanzbotz.my.id/api/ai/characterai?text=${text}, ${last[0]}&name=Ninip Ganteng`,
 		)
 			.then((result) => result.json())
 			.then((x) => m.reply(x.result))
