@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const handler = async (m, { conn, text, command, usedPrefix }) => {
-    if (!text) return m.reply(`Gunakan format ${usedPrefix + command} <url>\n\n*Contoh :* ${usedPrefix + command} https://instagram.com/nip.niff\nList:\n${usedPrefix}ss <url> (screenshot via hp)\n${usedPrefix}ssweb <url> (screenshot via tablet)\n${usedPrefix}sstablet <url> (screenshot via tablet)\n${usedPrefix}sspc <url> (screenshot via pc)\n${usedPrefix}sslaptop <url> (screenshot via laptop)\n${usedPrefix}sshp <url> (screenshot via hp)`);
+    if (!text) return m.reply(`Gunakan format ${usedPrefix + command} <url>\n\n*Contoh :* ${usedPrefix + command} https://github.com/hanipubaidur\nList:\n${usedPrefix}ss <url> (screenshot via hp)\n${usedPrefix}ssweb <url> (screenshot via tablet)\n${usedPrefix}sstablet <url> (screenshot via tablet)\n${usedPrefix}sspc <url> (screenshot via pc)\n${usedPrefix}sslaptop <url> (screenshot via laptop)\n${usedPrefix}sshp <url> (screenshot via hp)`);
   
     //m.reply("_Loading. . ._");
     m.reply(wait);
@@ -81,13 +81,13 @@ async function ssweb(url, device = 'desktop') {
                 }).then(({ data }) => {
                     const result = {
                         status: 200,
-                        author: 'Ninip Ganteng',
+                        author: 'Xnuvers007',
                         result: data
                     };
                     resolve(result);
                 });
             } else {
-                reject({ status: 404, author: 'Ninip Ganteng', message: data.data });
+                reject({ status: 404, author: 'Xnuvers007', message: data.data });
             }
         }).catch(reject);
     });

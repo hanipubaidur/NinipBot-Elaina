@@ -1,6 +1,6 @@
 let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
 const sender = m.key.fromMe ? (conn.user.id.split(':')[0]+'@s.whatsapp.net' || conn.user.id) : (m.key.participant || m.key.remoteJid)
-const owned = `6282183478561@s.whatsapp.net`
+const owned = `6283181666350@s.whatsapp.net`
 const text12 = `*Hi @${sender.split("@")[0]} 👋*
 
 ▭▬▭( *ʟɪsᴛ - ᴘᴀɴᴇʟ* )▭▬▭

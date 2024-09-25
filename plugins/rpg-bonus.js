@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
     conn.reply(m.chat, 'Nih Gw Kasih Modal Buat beli limit\n💰50.000 Rupiah', m)  
     global.db.data.users[m.sender].money += 50000
     global.db.data.users[m.sender].lastclaim = new Date * 1
-  } else conn.reply(m.chat, '📮Bagi sedekah ke owner banh', m)
+  } else conn.reply(m.chat, '📮Bagi link bokep 100.000:v', m)
 }
 handler.help = ['bonus', 'hadiah']
 handler.tags = ['rpg']

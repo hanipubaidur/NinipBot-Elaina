@@ -27,7 +27,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     if (before !== user.level) {
       await conn.reply(m.chat, `${name} Level Up!\n_${before}_ -> ${user.level}`.trim(), m);
     }
-    
+
     // Jeda agar pesan terlihat berurutan
     await new Promise(resolve => setTimeout(resolve, 2000));
     

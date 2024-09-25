@@ -1,33 +1,15 @@
-import axios from "axios"
-import cheerio from "cheerio"
+import fetch from 'node-fetch'
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text)
-    throw `*• Example :* ${usedPrefix + command} https://www.capcut.com`;
-  m.reply(wait);
-  try {
-    let res = await capcut(text);
-    conn.sendFile(
-      m.chat,
-      res.video,
-      null,
-      `*• Thumbnail:* ${res.thumbnail}\n• *Url:* ${text}`,
-      m,
-    );
-  } catch (e) {}
-};
-handler.help = ["capcut"].map((a) => a + "");
-handler.tags = ["downloader"];
-handler.command = ["capcut","cc"];
-export default handler 
-
-async function capcut(url) {
-  const response = await fetch(url);
-  const data = await response.text();
-  const $ = cheerio.load(data);
-
-  return {
-    thumbnail: $("video").attr("poster"),
-    video: $("video").attr("src"),
-  };
+ let handler = async (m, { conn, text, usedPrefix, command }) => {
+   if (!text) throw `*Example:* ${usedPrefix}${command} https://www.capcut.com/...`;
+conn.sendMessage(m.chat, { react: { text: '🕒', key: m.key }})
+ let ouh = await fetch(`https://widipe.com/download/capcut?url=${text}`)
+  let gyh = await ouh.json() 
+	let url = `${gyh.result.video_ori}`
+	conn.sendFile(m.chat, url, null, `*D E S K R I P S I :*\n${gyh.result.description}\nDIGUNAKAN SEBANYAK : ${gyh.result.digunakan}`, m)
 }
+handler.help = ['capcut']
+handler.tags = ['downloader']
+handler.command = /^(capcut)$/i
+handler.premium = false
+export default handler

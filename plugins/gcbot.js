@@ -16,7 +16,7 @@ let handler = async (m, { conn }) => {
       }
     });
  }
- handler.help = ['gcbot'];
+ handler.help = ['gcbot', 'gcninipbot'];
 handler.tags = ['main'];
-handler.command = /^(gcbot|groupbot|botgc|botgroup|gcninipbot)$/i;
+handler.command = /^(gcbot|groupbot|botgc|botgroup|gcninipbot|groupninipbot)$/i;
 export default handler;

@@ -27,7 +27,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
     let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.ibb.co/2WzLyGk/profile.jpg')
     let user = global.db.data.users[m.sender]
     if (user.registered === true) throw `[💬] Kamu sudah terdaftar\nMau daftar ulang? *${usedPrefix}unreg <SERIAL NUMBER>*\n*allmenu* [Menampilkan Semua Perintah]`
-    if (!Reg.test(text)) return m.reply(`Silahkan Ketik:\n${usedPrefix + command} nama.umur\n\nContoh:\n${usedPrefix + command} Ninip.18`)
+    if (!Reg.test(text)) return m.reply(`Silahkan Ketik:\n${usedPrefix + command} nama.umur\n\nContoh:\n${usedPrefix + command} Ninip.19`)
     let [_, name, splitter, age] = text.match(Reg)
     if (!name) return m.reply('Nama tidak boleh kosong (Alphanumeric)')
     if (!age) return m.reply('Umur tidak boleh kosong (Angka)')

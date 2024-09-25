@@ -1,7 +1,3 @@
-/*
-Aldo
-*/
-// luminai with session ✍️
 import axios from 'axios';
 
 async function luminAi(teks, pengguna = null, prompt = null, modePencarianWeb = false) {
@@ -11,7 +7,7 @@ async function luminAi(teks, pengguna = null, prompt = null, modePencarianWeb = 
         if (prompt !== null) data.prompt = prompt;
         data.webSearchMode = modePencarianWeb;
 
-        const { data: res } = await axios.post("https://luminai.siputzx.my.id/", data);
+        const { data: res } = await axios.post("https://lumin-ai.xyz/", data);
         return res.result;
     } catch (error) {
         console.error('Terjadi kesalahan:', error);

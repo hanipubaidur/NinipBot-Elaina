@@ -28,15 +28,15 @@ let Styles = (text, style = 1) => {
 };
 
 let loadd = [
-    "□□■■■■■■■■\n             𝟷𝟶٪",
-    "■■□□■■■■■■\n             𝟹𝟶٪",
-    "■■■■□□■■■■\n             𝟻𝟶٪",
-    "■■■■■■□□■■\n             𝟾𝟶٪",
-    "■■■■■■■■□□\n             𝟷𝟶𝟶٪",
-    "ʟ ᴏ ᴀ ᴅ ɪ ɴ ɢ  ᴄ ᴏ ᴍ ᴘ ʟ ᴇ ᴛ ᴇ. . ."
+    "_🕗",
+    "__🕘",
+    "___🕙",
+    "____🕚",
+    "_____🕛",
+    "✅"
   ]
 
-let { key } = await conn.sendMessage(m.chat, {text: 'ʟ ᴏ ᴀ ᴅ ɪ ɴ ɢ. . .'})//Pengalih isu
+let { key } = await conn.sendMessage(m.chat, {text: '⌛'})//Pengalih isu
 
 for (let i = 0; i < loadd.length; i++) {
   await new Promise(resolve => setTimeout(resolve, 850));
@@ -63,16 +63,16 @@ const defaultMenu = {
  . . ┊⿻ [ *ᴅᴀᴛᴇ* :: %date]. . 
  . . ┊⿻ [ *ᴘʟᴀᴛғᴏʀᴍ* :: %platform]. . 
  . . ┊⿻ [ *ʟɪʙʀᴀʀʏ* :: @adiwajshing/baileys]. . 
- . . ┊⿻ [ *ᴄʀᴇᴀᴛᴏʀ* :: Ninip Ganteng ]. . 
+ . . ┊⿻ [ *ᴄʀᴇᴀᴛᴏʀ* :: Ninip ]. . 
  . . ╰─────────╮
 
 エラーを見つけた場合、またはプレミアム プランをアップグレードしたい場合は、所有者に連絡してください。
 %readmore
 `.trimStart(),
-  header: '─₍🍁₎❝┊ *%category*',
-  body: `┊꒱ ☁   %cmd %islimit %isPremium `,
-  footer: '╰─── –',
-  after: `𝘕𝘪𝘯𝘪𝘱𝘉𝘰𝘵 × 𝘌𝘭𝘢𝘪𝘯𝘢-𝘔𝘋 ${global.version}`,
+  header: '❖━━━━━━[ *%category* ]━━━━━━❖\n╔═━───╍━╍╍┄',
+  body: `╠➺ %cmd %islimit %isPremium `,
+  footer: '╚═─━╍╍━╍╾',
+  after: `ᴇʟᴀɪɴᴀ ᴀɪ ${global.version}`,
 }
   try {
     let name = m.pushName || conn.getName(m.sender)
@@ -171,16 +171,16 @@ const defaultMenu = {
                 externalAdReply: {
                     showAdAttribution: true,
                     forwardingScore: 2023,
-                    title: 'ᴍ ᴇ ɴ ᴜ  ʙ ᴏ ᴛ',
+                    title: 'ᴍ ᴇ ɴ ᴜ  ʙ ᴏ ᴛ  ᴇ ʟ ᴀ ɪ ɴ ᴀ',
                     thumbnailUrl: 'https://telegra.ph/file/002e7bf25b03f8e54fcc1.jpg',
-                    sourceUrl: sgc,
+                    sourceUrl: 'https://s.id/publikchatgroupbyrapikz',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                     mentionedJid: [m.sender]
                      }}}, { quoted: memek })
                      await conn.sendFile(m.chat, apalah, 'menu.mp3', null, m, true, {
  type: 'audioMessage',  
- ptt: true, contextInfo: { forwardingScore: 999, isForwarded: false, externalAdReply: {title: 'ᴇʟᴀɪɴᴀ ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ', body: wm, sourceUrl: saluran, thumbnail: await (await fetch(bjir)).buffer(),}}  
+ ptt: true, contextInfo: { forwardingScore: 999, isForwarded: false, externalAdReply: {title: 'ᴇʟᴀɪɴᴀ ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ', body: wm, sourceUrl: 'https://whatsapp.com/channel/0029VaF8RYn9WtC16ecZws0H', thumbnail: await (await fetch(bjir)).buffer(),}}  
   }) 
     } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)

@@ -1,5 +1,5 @@
 var handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
-	const sections = "ʟɪsᴛ ᴏᴘᴛɪᴏɴs :\n\n┌ ◦ ᴡᴇʟᴄᴏᴍᴇ\n│ ◦ ᴅᴇʟᴇᴛᴇ\n│ ◦ ᴀɴᴛɪᴠɪᴇᴡᴏɴᴄᴇ\n│ ◦ sᴇʟғ\n│ ◦ ᴘᴜʙʟɪᴄ\n│ ◦ sɪᴍɪ\n│ ◦ ɴsғᴡ\n│ ◦ ᴘʀᴇᴍɴsғᴡᴄʜᴀᴛ\n│ ◦ ᴀɴᴛɪʟɪɴᴋ\n│ ◦ ᴀɴᴛɪᴄᴀʟʟ\n│ ◦ ᴀɴᴛɪᴅᴇʟᴇᴛᴇ\n│ ◦ ᴀɴᴛɪʙᴏᴛ\n│ ◦ ᴀɴᴛɪᴀᴜᴅɪᴏ\n│ ◦ ᴀɴᴛɪʙᴀᴅᴡᴏʀᴅ\n│ ◦ ᴀɴᴛɪᴄᴀʟʟ\n│ ◦ ᴀɴᴛɪꜰᴏᴛᴏ\n│ ◦ ᴀɴᴛɪɴꜱꜰᴡ\n│ ◦ ᴀɴᴛɪꜱᴛɪᴄᴋᴇʀ\n│ ◦ ᴀɴᴛɪᴛᴏxɪᴄ\n│ ◦ ᴀɴᴛɪᴠɪᴅᴇᴏ\n│ ◦ ᴀɴᴛɪᴠɪʀᴜꜱ\n│ ◦ ᴀɴᴛɪsᴘᴀᴍ\n│ ◦ ᴀᴜᴛᴏsᴛɪᴄᴋᴇʀ\n│ ◦ ᴀᴜᴛᴏʟᴇᴠᴇʟᴜᴘ\n│ ◦ ᴅᴇᴛᴇᴄᴛ\n│ ◦ ʀᴇsᴛʀɪᴄᴛ\n│ ◦ ɴʏɪᴍᴀᴋ\n│ ◦ ᴀᴜᴛᴏʀᴇᴀᴅ\n│ ◦ ᴘᴄᴏɴʟʏ\n│ ◦ ɢᴄᴏɴʟʏ\n│ ◦ sᴡᴏɴʟʏ\n└ ◦ ᴀɴɪᴍᴇᴜᴘᴅᴀᴛᴇ\n\n";
+	const sections = "ʟɪsᴛ ᴏᴘᴛɪᴏɴs :\n\n┌ ◦ ᴡᴇʟᴄᴏᴍᴇ\n│ ◦ ᴅᴇʟᴇᴛᴇ\n│ ◦ ᴀɴᴛɪᴠɪᴇᴡᴏɴᴄᴇ\n│ ◦ sᴇʟғ\n│ ◦ ᴘᴜʙʟɪᴄ\n│ ◦ sɪᴍɪ\n│ ◦ ɴsғᴡ\n│ ◦ ᴘʀᴇᴍɴsғᴡᴄʜᴀᴛ\n│ ◦ ᴀɴᴛɪʟɪɴᴋ\n│ ◦ ᴀɴᴛɪᴄᴀʟʟ\n│ ◦ ᴀɴᴛɪᴅᴇʟᴇᴛᴇ\n│ ◦ ᴀɴᴛɪsᴘᴀᴍ\n│ ◦ ᴀᴜᴛᴏsᴛɪᴄᴋᴇʀ\n│ ◦ ᴀᴜᴛᴏʟᴇᴠᴇʟᴜᴘ\n│ ◦ ᴅᴇᴛᴇᴄᴛ\n│ ◦ ʀᴇsᴛʀɪᴄᴛ\n│ ◦ ɴʏɪᴍᴀᴋ\n│ ◦ ᴀᴜᴛᴏʀᴇᴀᴅ\n│ ◦ ᴘᴄᴏɴʟʏ\n│ ◦ ɢᴄᴏɴʟʏ\n│ ◦ sᴡᴏɴʟʏ\n└ ◦ ᴀɴɪᴍᴇᴜᴘᴅᴀᴛᴇ\n\n";
   const contoh = sections + usedPrefix + "ᴇɴᴀʙʟᴇ ɢᴄᴏɴʟʏ";
   let isEnable = /true|enable|(turn)?on|1/i.test(command);
   let chat = global.db.data.chats[m.chat];
@@ -53,80 +53,6 @@ var handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
         }
       }
       chat.delete = !isEnable;
-      break;
-    case 'antibot':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          return await conn.reply(m.chat, 'Only admin or owner can use this command in group chat!', m);
-        }
-      }
-      chat.antiBot = isEnable;
-      break;
-    case 'antiaudio':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          return await conn.reply(m.chat, 'Only admin or owner can use this command in group chat!', m);
-        }
-      }
-      chat.antiAudio = !isEnable;
-      break;
-    case 'anticall':
-      isAll = true;
-      if (m.isGroup) {
-        if (!isROwner) {
-          return await conn.reply(m.chat, 'Only regular owner can use this command!', m);
-        }
-      }
-      global.opts['antiCall'] = isEnable;
-      break;
-    case 'antifoto':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          return await conn.reply(m.chat, 'Only admin or owner can use this command in group chat!', m);
-        }
-      }
-      chat.antiFoto = !isEnable;
-      break;
-    case 'antinsfw':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          return await conn.reply(m.chat, 'Only admin or owner can use this command in group chat!', m);
-        }
-      }
-      chat.antiNsfw = isEnable;
-      break;
-    case 'antisticker':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          return await conn.reply(m.chat, 'Only admin or owner can use this command in group chat!', m);
-        }
-      }
-      chat.antiSticker = !isEnable;
-      break;
-    case 'antitoxic':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          return await conn.reply(m.chat, 'Only admin or owner can use this command in group chat!', m);
-        }
-      }
-      chat.antiToxic = isEnable;
-      break;
-    case 'antiVideo':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          return await conn.reply(m.chat, 'Only admin or owner can use this command in group chat!', m);
-        }
-      }
-      chat.antiVideo = !isEnable;
-      break;
-    case 'antivirus':
-      isAll = true;
-      if (m.isGroup) {
-        if (!isROwner) {
-          return await conn.reply(m.chat, 'Only regular owner can use this command!', m);
-        }
-      }
-      global.opts['antiVirus'] = isEnable;
       break;
     case 'document':
       chat.useDocument = isEnable;

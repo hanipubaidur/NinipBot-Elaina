@@ -2,10 +2,10 @@
 let handler = async (m, { conn, usedPrefix, participants }) => {
 
 conn.level = global.db.data.users[m.sender]
-  conn.fightkyubi = conn.fightkyubi ? conn.fightkyubi : {}
+  conn.fightnaga = conn.fightnaga ? conn.fightnaga : {}
   const delay = time => new Promise(res=>setTimeout(res,time));
 
-  if (typeof conn.fightkyubi[m.sender] != "undefined" && conn.fightkyubi[m.sender] == true) return m.reply(`*Tidak bisa melakukan battle ⚔️ karena Arena yang kamu miliki dipakai untuk fight pet mu yg lain.*`)
+  if (typeof conn.fightnaga[m.sender] != "undefined" && conn.fightnaga[m.sender] == true) return m.reply(`*Tidak bisa melakukan battle ⚔️ karena Arena yang kamu miliki dipakai untuk fight pet mu yg lain.*`)
 
   let users = participants.map(u => u.id)
   var lawan
@@ -18,7 +18,7 @@ conn.level = global.db.data.users[m.sender]
 
   m.reply(`*Pet Kamu* (🦊kyubi ${global.db.data.users[m.sender].kyubi}) ⚔️menantang 🦊kyubinya *${conn.getName(lawan)}* (🦊kyubi ${global.db.data.users[lawan].kyubi}) lagi berkelahi.\n\nTunggu ${lamaPertarungan} menit lagi dan lihat siapa yg menang🎮.`)
 
-  conn.fightkyubi[m.sender] = true
+  conn.fightnaga[m.sender] = true
 
   await delay(1000 * 60 * lamaPertarungan)
 
@@ -53,7 +53,7 @@ conn.level = global.db.data.users[m.sender]
     m.reply(`*${conn.getName(m.sender)}* [${pointPemain * 10}] - [${pointLawan * 10}] *${conn.getName(lawan)}*\n\nHasil imbang kak, ga dapet apa apa 😂`)
   }
 
-  delete conn.fightkyubi[m.sender]
+  delete conn.fightnaga[m.sender]
 }
 handler.help = ['fightkyubi']
 handler.tags = ['game']

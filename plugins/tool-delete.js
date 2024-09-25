@@ -11,7 +11,7 @@ const handler = async (m, { conn, command }) => {
 
 handler.help = ['del', 'delete'];
 handler.tags = ['tools'];
-handler.command = /^(delete|del|hps|hapus|erase|d)$/i;
-handler.admin = true;
+handler.command = /^(delete|del|hps|hapus|erase)$/i;
+handler.admin = false;
 
 export default handler;

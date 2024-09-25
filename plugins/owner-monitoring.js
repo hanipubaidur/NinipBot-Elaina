@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 // const MONITOR_API_KEY = process.env['MONITOR'];
-const MONITOR_API_KEY = 'm797418626-2e395260343f90921fed9dc8' // Masukin APIKEY uptimerobot kamu disini ===== https://uptimerobot.com/dashboard?ref=website-header#mySettings
+const MONITOR_API_KEY = '' // Masukin APIKEY uptimerobot kamu disini ===== https://uptimerobot.com/dashboard?ref=website-header#mySettings
 
 var handler = async (m, { conn }) => {
   conn.reply(m.chat, 'Sedang memuat informasi monitor... Silahkan tunggu', m);

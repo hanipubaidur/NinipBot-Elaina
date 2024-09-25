@@ -9,7 +9,7 @@ let stiker = await sticker(null, global.API(`${pickRandom(stikerhuuu)}`), global
     if (stiker) return await conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)  
 }
 
-handler.customPrefix = /^(ok|oke|iya|siip|sip|wuu|huu)$/i
+handler.customPrefix = /^(ok|oke|iya)$/i
 handler.command = new RegExp
 
 export default handler 

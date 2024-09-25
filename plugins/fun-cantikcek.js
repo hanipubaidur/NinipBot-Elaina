@@ -31,5 +31,5 @@ let cantikk = [
 'Cantik Level : 83%\n\nDijamin cowok gak akan kecewa neng',
 'Cantik Level : 89%\n\ncowok2 pasti auto salfok klo ngeliat lo!',
 'Cantik Level : 94%\n\nAARRGGHHH!!!',
-'Cantik Level : 100%\n\nKamu Cantik!, Jadi Pacar Ownerku Aja Nih',
+'Cantik Level : 100%\n\nKamu Cantik!, Jadi Pacar Ownerku Aja',
 ]

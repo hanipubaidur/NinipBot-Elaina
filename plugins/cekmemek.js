@@ -1,6 +1,6 @@
 let handler = async (m, { conn, command, text }) => {
 	
-    if (!text) return conn.reply(m.chat, '• *Example :* .cekmemek Ibu Komintod', m)
+    if (!text) return conn.reply(m.chat, '• *Example :* .cekmemek UYanti', m)
 	
   conn.reply(m.chat, `
 ╭━━━━°「 *Memeknya ${text}* 」°

@@ -1,3 +1,19 @@
+/*
+TUTOR DAPETIN HOST, ACCESS_KEY, DAN ACCESS_SECRET
+1. siapkan email palsu https://temp-mail.org/id
+2. kesini https://console.acrcloud.com/#/register (isi bebas)
+3. Kalian akan di arahkan ke website untuk login
+4. pilih Audio & Video Recognition atau https://console.acrcloud.com/avr?region=ap-southeast-1
+5. Pilih project dan pilih Audio & Video Recognition
+6. Create project
+7. isi project name bebas
+8. pilih Recorded Audio (Audio captured via microphone or noisy audio files)
+9. pilih ini Audio Fingerprinting & Cover Song (Humming) Identification
+10. pilih buckets ACRCloud Music dan centang semua lalu confirm
+
+NOTE: ini berlaku 14 hari, lakukan hal yang berulang kali. disarankan jangan spam atau terlalu ngasal.
+*/
+
 import acrcloud from 'acrcloud';
 
 let acr = new acrcloud({

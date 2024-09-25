@@ -25,7 +25,7 @@ const {
 } = await await import(_0x5e1e50(0x1b8) + _0x5e1e50(0x1ed) + 's');
 
 function _0x5bba() {
-    const _0x39eec0 = ['GFqHU', '1449603fVFlhu', 'ert media ', 'ObfrY', 'useDocumen', 'QeyDY', 'lakentod.j', 'sendFile', '../lib/kae', 'test', 'mimetype', 'tags', '2401410wPpEtx', '9emrUHb', 'waktu bebe', 'kylpO', 'Can\'t down', 'di proses,', 'download', '```Sedang ', 'chat', 'mCVZP', 'command', 'Reply Vide', 'opyRight:*', '50QXCtYM', 'rapa menit', 'help', 'Can\'t conv', 'o/Vn Nya', 'audio/mp4', 'msg', 'audio', '...```\x0a\x0a*C', '1330732GCSDuF', '24MkqSMq', 'dhiHE', 'emerlukan ', '2248000oHZDBi', 'to audio', 'load media', '287764WNbvkZ', 'chats', 'base64', 'reply', '55259mAdKmy', 'data', 'outube.com', ' https://y', 'audio.mp3', '/@ythmg', ' Mungkin m', 'quoted', 'kaela', '972223tnfdxf'];
+    const _0x39eec0 = ['GFqHU', '1449603fVFlhu', 'ert media ', 'ObfrY', 'useDocumen', 'QeyDY', 'lakentod.j', 'sendFile', '../lib/kae', 'test', 'mimetype', 'tags', '2401410wPpEtx', '9emrUHb', 'waktu bebe', 'kylpO', 'Can\'t down', 'di proses,', 'download', '```Sedang ', 'chat', 'mCVZP', 'command', 'Reply Vide', 'opyRight:*', '50QXCtYM', 'rapa menit', 'help', 'Can\'t conv', 'o/Vn Nya', 'audio/mp4', 'msg', 'audio', '...```\x0a\x0a*C', '1330732GCSDuF', '24MkqSMq', 'dhiHE', 'emerlukan ', '2248000oHZDBi', 'to audio', 'load media', '287764WNbvkZ', 'chats', 'base64', 'reply', '55259mAdKmy', 'data', 'outube.com', ' https://y', 'audio.mp3', '/@Litzz445', ' Mungkin m', 'quoted', 'kaela', '972223tnfdxf'];
     _0x5bba = function () {
         return _0x39eec0;
     };

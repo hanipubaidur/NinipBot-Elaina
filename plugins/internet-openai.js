@@ -1,24 +1,16 @@
 import fetch from 'node-fetch';
+let handler = async (m, { conn, command, text }) => {
 
-const handler = async (m, {
-  text, 
-  usedPrefix, 
-  command
-}) => {
-  if (!text) throw `Masukkan pertanyaan!\n\n*Contoh:* Siapa presiden Indonesia? `
-  try {
-    await m.reply(wait)
-    const api = await fetch(`https://api.betabotz.eu.org/api/search/bard-ai?apikey=${lann}&text=${text}`)
-    const res = await api.json()
-    await m.reply(res.message)
-  } catch (err) {
-    console.error(err)
-    throw "Terjadi kesalahan dalam menjawab pertanyaan"
-  }
+    if (!text) throw `Textnya mana? Contoh:\n.${command} Apa arti ai?`;	
+  let apii = await fetch(`https://widipe.com/gpt4?text=${text}`)
+  let res = await apii.json()
+  conn.reply(m.chat, `
+ *[ CHAT GPT ]*
+ 
+${res.result}
+`.trim(), m)
 }
-
-handler.help = ['ai','openai','gpt'];
-handler.tags = ["ai"];
-handler.command = /^(openai|ai|gpt)$/i
-
+handler.command = handler.help = ['ai','openai','gpt'];
+handler.tags = ['tools'];
+handler.premium = false;
 export default handler;

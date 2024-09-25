@@ -88,7 +88,7 @@ contextInfo: {
 externalAdReply: {
 showAdAttribution: true,
 title: ``,
-body: 'I N F O  P I N G',
+body: 'I N F O  P I N G  E L A I N A',
 thumbnailUrl: 'https://telegra.ph/file/4f9594a606f2d1ab7e8f8.jpg',
 sourceUrl: saluran,
 mediaType: 1,

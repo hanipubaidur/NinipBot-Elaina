@@ -14,11 +14,11 @@ let handler = async (m, {
 	})
 
 	let count = parseInt(args[0]);
-	let price = count * 1000000;
+	let price = count * 1000;
 	let users = global.db.data.users;
 	let user = users[m.sender];
 	if (price > user.money) {
-		throw `Maaf, uang kamu tidak cukup untuk membeli ${count} limit. Harga 1 limit adalah 1000000 balance.`;
+		throw `Maaf, uang kamu tidak cukup untuk membeli ${count} limit. Harga 1 limit adalah 1000 balance.`;
 	}
 	user.money -= price;
 	user.limit += count;

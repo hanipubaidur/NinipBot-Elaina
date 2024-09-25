@@ -7,11 +7,11 @@ let ps = groupMetadata.participants.map(v => v.id)
     let b
     do b = ps.getRandom()
     while (b === a)
-    
+    /*
     m.reply(`*Ciee...* ${toM(a)} ❤️ ${toM(b)}`, null, {
         mentions: [a, b]
     })
-    
+    */
     let caption = `*Love Message...* ${toM(a)} ❤️ ${toM(b)}\n${await ktnmbk.getRandom()}`
     await conn.reply(m.chat, caption, m, { mentions: conn.parseMention(caption) })
     }

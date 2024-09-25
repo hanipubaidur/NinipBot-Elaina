@@ -14,6 +14,6 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 handler.help = ['pinterestv2<query>']
 handler.tags = ['internet']
-handler.command = /^(pinterestv2|pin2)$/i
+handler.command = /^(pinterestv2)$/i
 handler.limit = true
 export default handler

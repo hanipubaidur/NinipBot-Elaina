@@ -1,3 +1,7 @@
+// sebenernya masih adalagi liga italia, spanyol, champions, jerman, prancis. tapi memang belom dapet/ada jadwalnya jadi yang tersedia jadwalnya itu baru indonesia atau inggris
+// sering sering aja cek https://tr.deployers.repl.co/jadwal-pertandingan .
+// terimakasih.
+
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, command }) => {

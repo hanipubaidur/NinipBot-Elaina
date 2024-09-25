@@ -16,10 +16,9 @@ export async function before(m, {conn, isAdmin, isBotAdmin }) {
         await conn.reply(m.chat, `*≡ Tautan terdeteksi*
             
 Kami tidak mengizinkan link dari grup lain 
-Maaf *@${m.sender.split('@')[0]}* Anda akan dikeluarkan dari grup ${isBotAdmin ? '' : '\n\nSaya bukan admin jadi saya tidak bisa kick Anda:"v'}`, null, { mentions: [m.sender] } )
+Maaf  ${isBotAdmin ? '' : '\n\nSaya bukan admin jadi saya tidak bisa menghapus pesan'}`, null, { mentions: [m.sender] } )
         if (isBotAdmin && chat.antiLink) {
         	await conn.sendMessage(m.chat, { delete: m.key })
-            await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         } else if (!chat.antiLink) return //m.reply('')
     }
     return !0

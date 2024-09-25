@@ -7,7 +7,7 @@ var handler = async (m, { conn, text }) => {
   if (!res.ok) throw 'Tidak Ditemukan';
   let json = await res.json();
   let message = '';
-  let Xnuvers007 = 'Scrape By Ninip Ganteng';
+  let Xnuvers007 = 'Github NinipBot-Elaina';
 
   json.mahasiswa.forEach(data => {
     let nama = data.text;
@@ -17,7 +17,6 @@ var handler = async (m, { conn, text }) => {
   });
   const mySecret = 'Nomer kamu'
   conn.reply(m.chat, message, m);
-  conn.reply(m.chat, `JANGAN LUPA SUPPORT DEVELOPERNYA`, m);
 }
 
 handler.help = ['mhs <nama>','mhs <nim>'];

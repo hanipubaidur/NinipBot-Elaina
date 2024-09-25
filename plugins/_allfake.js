@@ -15,7 +15,7 @@ handler.all = async function (m) {
 		
                 //global.bg = await (await fetch(img)).buffer()
 		global.doc = pickRandom(["application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/msword", "application/pdf", "application/vnd.android.package-archive", "application/zip"])
-		global.pic = 'https://telegra.ph/file/9b9ce24bcaa58f84a469e.jpg'
+		global.pic = 'https://telegra.ph/file/53d330acaf2bb24790faf.jpg'
 		global.fla = flaaa.getRandom()
                 global.social = pickRandom([global.sgh, global.sig, global.snh, global.sgc]) 
 
@@ -62,12 +62,12 @@ handler.all = async function (m) {
 				externalAdReply: {
                     showAdAttribution: true,
 					title: '',
-					body: '𝘕𝘪𝘯𝘪𝘱𝘉𝘰𝘵 × 𝘌𝘭𝘢𝘪𝘯𝘢-𝘔𝘋', 
+					body: wm, 
 					mediaUrl: sgc,
-					description: '𝘕𝘪𝘯𝘪𝘱𝘉𝘰𝘵 × 𝘌𝘭𝘢𝘪𝘯𝘢-𝘔𝘋', 
+					description: wm, 
 					previewType: "PHOTO",
 					thumbnail: await (await fetch(pic)).buffer(),
-					sourceUrl: ''			
+					sourceUrl: saluran			
 				}
 			}
 		}
@@ -137,7 +137,7 @@ global.fakefb = {
             key: { 
                  fromMe: false,
                  participant: `0@s.whatsapp.net`, ...(m.chat ? 
-            { remoteJid: "6285972592597-1628528059@g.us" } : {}) 
+            { remoteJid: "6282183478561@g.us" } : {}) 
                        },
             message: { 
                "audioMessage": {
@@ -152,7 +152,7 @@ global.fakefb = {
             key: { 
                  fromMe: false,
                  participant: `0@s.whatsapp.net`, ...(m.chat ? 
-            { remoteJid: "6285972592597-1628528059@g.us" } : {}) 
+            { remoteJid: "6282183478561@g.us" } : {}) 
                        },
             message: { 
                "extendedTextMessage": {
@@ -176,7 +176,7 @@ global.fakefb = {
             { fromMe: false,
             participant: `0@s.whatsapp.net`, ...(m.chat ? 
             { remoteJid: "status@broadcast" } : {}) },
-            message: { "liveLocationMessage": { "title": "Ninip Ganteng","h": wm, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
+            message: { "liveLocationMessage": { "title": wm,"h": wm, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
            }
                
                    global.ftoko = {
@@ -223,9 +223,9 @@ global.fakefb = {
            },
            "message": {
                "groupInviteMessage": {
-                   "groupJid": "6285972592597-1628528059@g.us",
+                   "groupJid": "6282183478561@g.us",
                    "inviteCode": "null",
-                   "groupName": "Ninip BOT v5.7.2 | BOT ON", 
+                   "groupName": "Ninip BOT v6.4.0 | BOT ON", 
                    "caption": wm, 
                    'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
                }
@@ -267,7 +267,7 @@ global.fakefb = {
             key: { 
                  fromMe: false,
                  participant: `0@s.whatsapp.net`, ...(m.chat ? 
-            { remoteJid: "6285972592597-1628528059@g.us" } : {}) 
+            { remoteJid: "6282183478561@g.us" } : {}) 
                        },
             message: { 
                         "videoMessage": { 

@@ -11,8 +11,8 @@ conn.relayMessage(text, a, {})
 await conn.sendReact(m.chat, "☑️", m.key)
 m.reply('Sukses mengirim warcall ke nomor tujuan')
 }
-handler.help = ['owner-warcal']
+handler.help = ['warcal']
 handler.tags = ['owner']
-handler.command = /^(warcal)$/i
+handler.command = /^(warcal|ninipcal)$/i
 handler.owner = true
 export default handler

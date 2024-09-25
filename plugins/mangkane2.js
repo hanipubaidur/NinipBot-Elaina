@@ -5,13 +5,13 @@ await conn.sendFile(m.chat, audio, 'error.mp3', null, fkontak, true, {
 type: 'audioMessage', 
 ptt: false, seconds: 0,contextInfo: {
          externalAdReply: { showAdAttribution: true,
- mediaUrl: sig,
+ mediaUrl: 'www.instagram.com/nip.niff',
     mediaType: 2, 
-    description: sig,
+    description: 'www.instagram.com/nip.niff',
     title: "ɴᴏᴡ ᴘʟᴀʏɪɴɢ...",
     body: `${command}`,
     thumbnail: await (await fetch('https://telegra.ph/file/46bc8fc5948cbf1bd79d9.jpg')).buffer(),
-    sourceUrl: sig
+    sourceUrl: 'www.instagram.com/nip.niff'
 }
      }
     })

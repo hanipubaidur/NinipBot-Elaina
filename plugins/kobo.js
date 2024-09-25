@@ -1,7 +1,7 @@
 const _0x100265 = _0x432e;
 
 function _0x3114() {
-    const _0x513819 = ['1053LZgbPL', 'xNcFF', '```Sedang ', 'mimetype', 'sKJHd', 'emerlukan ', 'download', 'gPnig', '/@ythmg', 'chat', 'msg', ' https://y', '2556djhpvK', 'o/Vn Nya', 'Can\'t conv', 'Can\'t down', 'rapa menit', 'load media', 'kobo', ' Mungkin m', 'chats', '24KlQTho', 'audio/mp4', 'opyRight:*', '30tRFoRb', 'ert media ', '158290rREyij', '123777mOAMMl', 'useDocumen', 'di proses,', '781KYxDLZ', '265951qeAMTH', '...```\x0a\x0a*C', 'WYRuW', 'audio.mp3', 'tags', '../lib/kob', 'waktu bebe', 'audio', 'to audio', 'command', 'outube.com', 'TsNZW', 'Reply Vide', '501446HkaaJe', 'okentod.js', 'ghtSd', 'quoted', 'test', '55420BENSIS', 'data', 'sendFile', 'reply', '686335fzoYkz', 'help', 'base64'];
+    const _0x513819 = ['1053LZgbPL', 'xNcFF', '```Sedang ', 'mimetype', 'sKJHd', 'emerlukan ', 'download', 'gPnig', '/@Litzz445', 'chat', 'msg', ' https://y', '2556djhpvK', 'o/Vn Nya', 'Can\'t conv', 'Can\'t down', 'rapa menit', 'load media', 'kobo', ' Mungkin m', 'chats', '24KlQTho', 'audio/mp4', 'opyRight:*', '30tRFoRb', 'ert media ', '158290rREyij', '123777mOAMMl', 'useDocumen', 'di proses,', '781KYxDLZ', '265951qeAMTH', '...```\x0a\x0a*C', 'WYRuW', 'audio.mp3', 'tags', '../lib/kob', 'waktu bebe', 'audio', 'to audio', 'command', 'outube.com', 'TsNZW', 'Reply Vide', '501446HkaaJe', 'okentod.js', 'ghtSd', 'quoted', 'test', '55420BENSIS', 'data', 'sendFile', 'reply', '686335fzoYkz', 'help', 'base64'];
     _0x3114 = function () {
         return _0x513819;
     };

@@ -1,7 +1,7 @@
 var handler = async (m, { conn, usedPrefix: _p }) => {
   const text = m.text.toLowerCase();
 
-  if (text === 'p' || text === 'pe' || text === 'woy' || text === 'cuk' || text === 'coy' || text === 'cuy' || text === 'cok' || text === 'woi' || text === 'tol') {
+  if (text === 'p' || text === 'pe' || text === 'woy' || text === 'cuk' || text === 'coy' || text === 'cuy' || text === 'cok' || text === 'woi' || text === '🗿' || text === 'tol') {
     let info = `Harap yang sopan dalam memanggil orang, minimal mengatakan "Assalamu'alaikum warrahmatullahi Wabarakatuh" atau kalian bisa panggil Namanya. Tidak sopan itu, Jika *anda lebih tua* anda mengerti yang namanya etika.\n\n`;
 
     let greetings = {
@@ -42,7 +42,7 @@ var handler = async (m, { conn, usedPrefix: _p }) => {
 };
 
 // UNTUK handler.customPrefix TAMBAHIN YANG KALIAN MAU YA DAN JANGAN LUPA JUGA DIGANTI PADA BAGIAN if text
-handler.customPrefix = /^(kakak|p|om|ninip bot|om sora|pe|woy|cuk|cok|coy|woi|cuy|bapak|pak|ibu|bu|min|admin|tol)$/i;
+handler.customPrefix = /^(kakak|p|om|om xnuvers|om sora|pe|woy|cuk|cok|coy|woi|cuy|bapak|pak|ibu|bu|min|admin|🗿|tol)$/i;
 handler.command = new RegExp();
 
 export default handler;

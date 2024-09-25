@@ -12,9 +12,9 @@ let handler  = async (m, { conn }) => {
 let msg = await generateWAMessageFromContent(m.chat, { locationMessage: {
   degreesLatitude: 0,
   degreesLongitude: 0,
-  name: '𝚁𝚙𝚐 𝙱𝚘𝚝 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙',
+  name: wm,
   address: wm,
-  url: 'https://github.com/xIKRATOSx',
+  url: sgc,
   isLive: true,
   accuracyInMeters: 0,
   speedInMps: 0,

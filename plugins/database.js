@@ -36,7 +36,7 @@ contextInfo: {
 externalAdReply: {
 showAdAttribution: true,
 title: ``,
-body: 'U S E R  E L A I N A',
+body: 'U S E R  E L A I N A  B O T',
 thumbnailUrl: 'https://telegra.ph/file/676098c39dc2f6259cafb.jpg',
 sourceUrl: saluran,
 mediaType: 1,

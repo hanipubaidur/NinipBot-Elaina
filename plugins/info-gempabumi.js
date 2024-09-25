@@ -1,3 +1,5 @@
+// Atas segala hormat, saya Turut berduka cita kepada seseorang yang mendapatkan musibah ini ❤ Semoga diberikan ketabahan kepada Tuhan Yang Maha Esa❤
+
 import fetch from 'node-fetch'
 import sharp from 'sharp'
 
@@ -16,7 +18,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     txt += `Wilayah : ${anu.Wilayah}\n`
     txt += `Lintang : ${anu.Lintang} & Bujur: ${anu.Bujur}\n`
     txt += `Koordinat : ${anu.Coordinates}\n`
-    txt += anu.Dirasakan ? `Dirasakan : ${anu.Dirasakan}\n\n` : ''
+    txt += anu.Dirasakan ? `Dirasakan : ${anu.Dirasakan}` : ''
 
     let imgBuffer = await (await fetch(link + anu.Shakemap)).buffer()
     let img = await sharp(imgBuffer).png().toBuffer()

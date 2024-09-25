@@ -1,7 +1,7 @@
 let confirm = {}
 
 async function handler(m, { conn, args }) {
-    if (!isROwner) throw 'Dalam perbaikan'
+    //if (!isROwner) throw 'Dalam perbaikan'
     if (m.sender in confirm) throw 'Kamu masih melakukan judi, tunggu sampai selesai!!'
     try {
         let user = global.db.data.users[m.sender]

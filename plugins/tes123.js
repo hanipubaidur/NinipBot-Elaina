@@ -31,7 +31,7 @@ let msg = generateWAMessageFromContent(m.chat, {
             text: "PENCET TOMBOL DIBAWAH UNTUK MELIHAT MENU"
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: wm
+            text: "𝘕𝘪𝘯𝘪𝘱𝘉𝘰𝘵 × 𝘌𝘭𝘢𝘪𝘯𝘢-𝘔𝘋"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "BOT AKTIF",
@@ -228,7 +228,7 @@ let delay = time => new Promise(res => setTimeout(res, time))
             await delay(1000)              
             conn.sendMessage(m.chat, msg,{ quoted: m })
 }               
-handler.customPrefix = /^(tes|bot|ninip bot|test)$/i
+handler.customPrefix = /^(tes|bot|elaina|test)$/i
 handler.command = new RegExp
 export default handler
 

@@ -2,7 +2,7 @@ import { instagramdl } from '@bochilteam/scraper';
 import fetch from 'node-fetch';
 
 var handler = async (m, { args, conn, usedPrefix, command }) => {
-    if (!args[0]) throw `Ex:\n${usedPrefix}${command} https://www.instagram.com/reel/C5AJhMyvF2h/`;
+    if (!args[0]) throw `Ex:\n${usedPrefix}${command} https://www.instagram.com/...`;
     try {
         let res = await bochil.snapsave(args[0]);
         let media = await res[0].url;

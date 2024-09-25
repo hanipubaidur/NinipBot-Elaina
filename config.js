@@ -47,7 +47,7 @@ global.psaweria = 'https://saweria.com/' //saweria
 global.nomorwa = '6282183478561' //whatsapp
 global.nomorbot = '6281219288017' //nomor Bot
 global.nomorown = '6282183478561' //nomor Owner
-global.namebot = 'Ninip BOT × ᴇʟᴀɪɴᴀ ᴀɪ' //nama Bot
+global.namebot = '𝘕𝘪𝘯𝘪𝘱𝘉𝘰𝘵 × 𝘌𝘭𝘢𝘪𝘯𝘢-𝘔𝘋' //nama Bot
 global.nameown = 'Ninip Ganteng' //nama Owner
 
 /*============== STAFF ==============*/

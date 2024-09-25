@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 let handler = async (m, { text, conn, args, command, usedPrefix}) => {
-  if (!text) throw `[!] *Invalid*\n*Example*: ${usedPrefix+command} https://www.mediafire.com`
+  if (!text) throw `[!] *Invalid*\n*Example*: ${usedPrefix+command} https://www.mediafire.com/file/...`
     
 	conn.sendMessage(m.chat, {
 		react: {

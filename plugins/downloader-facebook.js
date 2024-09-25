@@ -1,31 +1,15 @@
-import fetch from 'node-fetch';
+import fetch from 'node-fetch'
 
-const handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) throw `Masukan URL!`;
-  try {
-    m.reply('*Please wait..*');
-    const url = args[0];
-    const get = await fetch(`https://api.betabotz.eu.org/api/download/fbdown?url=${url}&apikey=${lann}`);
-    const js = await get.json();
-    conn.sendFile(m.chat, js.result[1]._url, 'fb.mp4', '', m);
-  } catch (e) {
-    console.log(e);
-    if (m.sender) {
-      conn.reply(m.chat, `_*Terjadi kesalahan!*_`, m);
-    }
-  }
-};
-
-handler.help = ["fbdown *[link]*"];
-handler.tags = ["downloader"];
-handler.command = /^(fb|facebook|fbdl|facebookdl)$/i;
-handler.limit = true;
-handler.group = true;
-handler.premium = false;
-handler.owner = false;
-handler.admin = false;
-handler.botAdmin = false;
-handler.fail = null;
-handler.private = false;
-
-export default handler;
+ let handler = async (m, { conn, text, usedPrefix, command }) => {
+   if (!text) throw `*Example:* ${usedPrefix}${command} https://www.facebook.com/...`;
+conn.sendMessage(m.chat, { react: { text: '🕒', key: m.key }})
+ let ouh = await fetch(`https://widipe.com/download/fbdl?url=${text}`)
+  let gyh = await ouh.json() 
+	let url = `${gyh.result.HD}`
+	conn.sendFile(m.chat, url, null, `nih videonya kak`, m)
+}
+handler.help = ['facebook']
+handler.tags = ['downloader']
+handler.command = /^(fb|facebook|fbdl|facebookdl)$/i
+handler.premium = false
+export default handler

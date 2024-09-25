@@ -6,8 +6,7 @@ let handler  = async (m, { conn }) => {
 handler.help = ['filebokep']
 handler.tags = ['internet']
 handler.command = /^(filebokep)$/i
-handler.limit = 10
-handler.private = true
+handler.limit = 1
 
 export default handler
 

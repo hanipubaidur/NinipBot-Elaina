@@ -12,7 +12,7 @@ var teknya = args.join(" ")
 }
 conn.relayMessage(m.chat, call, {})
 }
- handler.help = ['warcall'];
+ handler.help = ['pler', 'warcall', 'call', 'tlpn'];
 handler.tags = ['warcall-gc'];
 handler.command = /^pler|tlpn|warcall|call$/i;
 handler.owner = true

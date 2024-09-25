@@ -1,20 +1,13 @@
-import { youtube } from 'btch-downloader';
+import fetch from 'node-fetch'
 
-const handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `*Example:* ${usedPrefix} ${command} https://www.youtube.com/watch?v=Z28dtg_QmFw`;
+ let handler = async (m, { conn, text, usedPrefix, command }) => {
+   if (!text) throw `*Example:* ${usedPrefix}${command} <link yt>`;
 conn.sendMessage(m.chat, { react: { text: '🕒', key: m.key }})
-  try {
-    const data = await youtube(text);
-    await conn.sendMessage(m.chat, {
-      video: { url: data.mp4 },
-      mimetype: 'video/mp4'
-    }, { quoted: m });
-  } catch (error) {
-    console.error(error);
-    throw error;
-  }
-};
-
+ let ouh = await fetch(`https://api.ssateam.my.id/api/aio?query=${text}`)
+  let gyh = await ouh.json() 
+	let url = `${gyh.data.response.url}`
+	conn.sendFile(m.chat, url, null, `NIH KAK VIDEONYA`, m)
+}
 handler.help = handler.command = ['ytshorts', 'shorts', 'short', 'ytmp4', 'ytv'];
 handler.tags = ['downloader'];
 handler.limit = true;

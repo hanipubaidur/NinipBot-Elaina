@@ -16,7 +16,7 @@ conn.level = global.db.data.users[m.sender]
 
   let lamaPertarungan = Acakin(8,20)
 
-  m.reply(`*Pet Kamu* (🐉naga ${global.db.data.users[m.sender].dragon}) ⚔️menantang 🐉naganya *${conn.getName(lawan)}* (🐉naga ${global.db.data.users[lawan].dragon}) lagi berkelahi.\n\nTunggu ${lamaPertarungan} menit lagi dan lihat siapa yg menang🎮.`)
+  m.reply(`*Pet Kamu* (🐉naga ${global.db.data.users[m.sender].naga}) ⚔️menantang 🐉naganya *${conn.getName(lawan)}* (🐉naga ${global.db.data.users[lawan].naga}) lagi berkelahi.\n\nTunggu ${lamaPertarungan} menit lagi dan lihat siapa yg menang🎮.`)
 
   conn.fightnaga[m.sender] = true
 
@@ -27,8 +27,8 @@ conn.level = global.db.data.users[m.sender]
 
   let kesempatan = []
   let i
-  for (i=0;i<global.db.data.users[m.sender].dragon;i++) kesempatan.push(m.sender)
-  for (i=0;i<global.db.data.users[lawan].dragon;i++) kesempatan.push(lawan)
+  for (i=0;i<global.db.data.users[m.sender].naga;i++) kesempatan.push(m.sender)
+  for (i=0;i<global.db.data.users[lawan].naga;i++) kesempatan.push(lawan)
 
   let pointPemain = 0
   let pointLawan = 0
@@ -42,12 +42,12 @@ conn.level = global.db.data.users[m.sender]
     let hadiah = (pointPemain - pointLawan) * 20000
     global.db.data.users[m.sender].money += hadiah
     global.db.data.users[m.sender].tiketcoin += 1
-    m.reply(`*${conn.getName(m.sender)}* [${pointPemain * 10}] - [${pointLawan * 10}] *${conn.getName(lawan)}*\n\n*Pet🐉Kamu* (naga ${global.db.data.users[m.sender].dragon}) MENANG melawan 🐉naganya *${conn.getName(lawan)}* (naga ${global.db.data.users[lawan].dragon}) karena naga🐉kamu ${alasanMenang[Acakin(0,alasanMenang.length-1)]}\n\nHadiah Rp. ${hadiah.toLocaleString()}\n+1 Tiketcoin`)
+    m.reply(`*${conn.getName(m.sender)}* [${pointPemain * 10}] - [${pointLawan * 10}] *${conn.getName(lawan)}*\n\n*Pet🐉Kamu* (naga ${global.db.data.users[m.sender].naga}) MENANG melawan 🐉naganya *${conn.getName(lawan)}* (naga ${global.db.data.users[lawan].naga}) karena naga🐉kamu ${alasanMenang[Acakin(0,alasanMenang.length-1)]}\n\nHadiah Rp. ${hadiah.toLocaleString()}\n+1 Tiketcoin`)
   }else if (pointPemain < pointLawan){
     let denda = (pointLawan - pointPemain) * 100000
     global.db.data.users[m.sender].money -= denda
     global.db.data.users[m.sender].tiketcoin += 1
-    m.reply(`*${conn.getName(m.sender)}* [${pointPemain * 10}] - [${pointLawan * 10}] *${conn.getName(lawan)}*\n\n*Pet🐉Kamu* (naga ${global.db.data.users[m.sender].dragon}) KALAH melawan 🐉naganya *${conn.getName(lawan)}* (naga ${global.db.data.users[lawan].dragon}) karena pet kamu ${alasanKalah[Acakin(0,alasanKalah.length-1)]}\n\nUang kamu berkurang Rp. ${denda.toLocaleString()}\n+1 Tiketcoin`)
+    m.reply(`*${conn.getName(m.sender)}* [${pointPemain * 10}] - [${pointLawan * 10}] *${conn.getName(lawan)}*\n\n*Pet🐉Kamu* (naga ${global.db.data.users[m.sender].naga}) KALAH melawan 🐉naganya *${conn.getName(lawan)}* (naga ${global.db.data.users[lawan].naga}) karena pet kamu ${alasanKalah[Acakin(0,alasanKalah.length-1)]}\n\nUang kamu berkurang Rp. ${denda.toLocaleString()}\n+1 Tiketcoin`)
   }else {
     m.reply(`*${conn.getName(m.sender)}* [${pointPemain * 10}] - [${pointLawan * 10}] *${conn.getName(lawan)}*\n\nHasil imbang kak, ga dapet apa apa 😂`)
   }
