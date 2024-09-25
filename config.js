@@ -63,7 +63,7 @@ global.capikey = 'pltc_xxxxx' //pltc
 global.apikey = 'plta_xxxxx' //plta
 
 /*============== APIKEY ==============*/
-global.lolkey = 'GataDios'
+global.lolkey = 'akiraa'
 global.xkey = 'd90a9e986e18778b'
 global.xzn = 'konekocyz'
 global.lann = 'ninipbot.betabotz'
@@ -81,14 +81,14 @@ global.APIs = { // API Prefix
 
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.lolhuman.xyz': 'GataDios', //lolhuman
+  'https://api.lolhuman.xyz': 'akiraa', //lolhuman
   'https://skizo.tech': 'konekocyz', //skizo
   'https://api.betabotz.eu.org': 'ninipbot.betabotz', //betabotz
   'https://api.xyroinee.xyz': '3WIq7q3CWt' //xyroine
 }
 
 /*============== VERSION ==============*/
-global.version = '5.7.2'
+global.version = '6.4.0'
 
 /*============== WATERMARK ==============*/
 global.wm = '𝘕𝘪𝘯𝘪𝘱𝘉𝘰𝘵 × 𝘌𝘭𝘢𝘪𝘯𝘢-𝘔𝘋' //wm1

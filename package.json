@@ -1,7 +1,7 @@
 {
-    "name": "NinipBot",
-    "version": "5.7.2",
-    "description": "✨ ┊ © 2024 NinipBot ™",
+    "name": "𝘕𝘪𝘯𝘪𝘱𝘉𝘰𝘵 × 𝘌𝘭𝘢𝘪𝘯𝘢-𝘔𝘋",
+    "version": "6.4.0",
+    "description": "✨ ┊ 𝘕𝘪𝘯𝘪𝘱𝘉𝘰𝘵 × 𝘌𝘭𝘢𝘪𝘯𝘢-𝘔𝘋",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -41,6 +41,7 @@
     "dependencies": {
         "@adiwajshing/baileys": "npm:@whiskeysockets/baileys@*",
         "@bochilteam/scraper": "^4.2.4",
+        "@ibaraki-douji/pixivts": "^2.4.1",
         "acrcloud": "^1.4.0",
         "aptoide-scraper": "^1.0.1",
         "awesome-phonenumber": "^5.11.0",
