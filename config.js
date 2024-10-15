@@ -54,7 +54,7 @@ global.nameown = 'Ninip Ganteng' //nama Owner
 global.owner = [
   ['6282183478561', 'Ninip Ganteng', true] //creator/owner
 ] //put your number here
-global.mods = ['6282183478561', '6281219288017'] //moderator
+global.mods = ['6282183478561'] //moderator
 global.prems = [] //prem bukan disini
 
 /*============== CPANEL ==============*/
@@ -66,7 +66,7 @@ global.apikey = 'plta_xxxxx' //plta
 global.lolkey = 'akiraa'
 global.xkey = 'd90a9e986e18778b'
 global.xzn = 'konekocyz'
-global.lann = 'apikeylann'
+global.lann = 'ninipbot.betabotz'
 global.xyro = '3WIq7q3CWt'
 
 /*============== API ==============*/
@@ -83,7 +83,7 @@ global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.lolhuman.xyz': 'akiraa', //lolhuman
   'https://skizo.tech': 'konekocyz', //skizo
-  'https://api.betabotz.eu.org': 'apikeylann', //betabotz
+  'https://api.betabotz.eu.org': 'ninipbot.betabotz', //betabotz
   'https://api.xyroinee.xyz': '3WIq7q3CWt' //xyroine
 }
 
