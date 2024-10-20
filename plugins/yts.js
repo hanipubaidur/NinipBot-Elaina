@@ -81,7 +81,7 @@ let msg = generateWAMessageFromContent(m.chat, {
             isForwarded: true,
             mentionedJid: [m.sender],
             forwardedNewsletterMessageInfo: {
-              newsletterJid: igch,
+              newsletterJid: idch,
               serverMessageId: null,
               newsletterName: `NinipBot Information ID`,
             },
