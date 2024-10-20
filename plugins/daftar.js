@@ -230,14 +230,15 @@ let msgs = generateWAMessageFromContent(m.chat, {
         },
         interactiveMessage: proto.Message.InteractiveMessage.create({
           body: proto.Message.InteractiveMessage.Body.create({
-            text: `Oke namamu adalah *${text}*\nSekarang silahkan Pilih Umur anda dengan cara klik tombol dibawah`
+            text: "Klik Tombol dibawah ini untuk memilih umur"
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
             text: wm
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-          hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: { url: "https://i.pinimg.com/originals/a4/35/81/a43581c3034771dba7e18151d15ce79e.jpg" } }, { upload: conn.waUploadToServer })
+            title: `NAMAMU: ${text}`,
+            subtitle: wm,
+            hasMediaAttachment: false
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{

@@ -1,19 +1,16 @@
-import { mediafiredl } from '@bochilteam/scraper'
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0]) throw `Use example ${usedPrefix}${command} https://www.mediafire.com/file/...`
-    let res = await mediafiredl(args[0])
-    let { url, url2, filename, ext, aploud, filesize, filesizeH } = res
-    let caption = `
-*💌 Name:* ${filename}
-*📊 Size:* ${filesizeH}
-*🗂️ Extension:* ${ext}
-*📨 Uploaded:* ${aploud}
-`.trim()
-    m.reply(caption)
-    await conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
+import fetch from 'node-fetch'
+
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+if (!text) throw `MASUKAN LINK!!!\n*Contoh:* ${usedPrefix}${command} https://www.mediafire.com/file/...`;
+conn.sendMessage(m.chat, { react: { text: "🕒", key: m.key } });
+	let ouh = await fetch(`https://widipe.com/mediafire?link=${text}`)
+  let gyh = await ouh.json()
+	await conn.sendFile(m.chat, gyh.result.url, `${gyh.result.filename}`, `*💌 Name:* ${gyh.result.filename}\n*📊 Size:* ${gyh.result.filesizeH}\n*🗂️ Extension:* ${gyh.result.ext}\n*📨 Uploaded:* ${gyh.result.upload_date}`, m)
+	await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
 }
-handler.help = ['mediafire'].map(v => v + ' <url>')
+handler.help = ['mediafire']
 handler.tags = ['downloader']
 handler.command = /^(mediafire|mf)$/i
-
+handler.premium = false
+handler.register = true
 export default handler

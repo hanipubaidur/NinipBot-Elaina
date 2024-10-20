@@ -12,4 +12,5 @@ handler.help = ['capcut']
 handler.tags = ['downloader']
 handler.command = /^(capcut)$/i
 handler.premium = false
+handler.register = true
 export default handler

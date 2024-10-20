@@ -19,5 +19,6 @@ handler.command = /^(caielaina)$/i
 handler.help = ['caielaina']
 handler.tags = ['character-ai']
 handler.premium = false
+handler.register = true
 
 export default handler;

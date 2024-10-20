@@ -58,14 +58,14 @@ export async function before(m) {
             delete this.autosholat[id][who];
           }, 86400000); // 1 day timeout
   
-          this.reply(m.chat, caption, null, {
-            contextInfo: {
-              mentionedJid: [who]
-            }
+                this.reply(m.chat, caption, null, {
+    contextInfo: {
+      mentionedJid: [who]
+    }
           });
         }
-      }
+        }
     }
-  }
-  
+}
+
   export const disabled = false;

@@ -53,5 +53,6 @@ var handler = async (m, { args, conn, usedPrefix, command }) => {
 handler.help = ['instagram'];
 handler.tags = ['downloader'];
 handler.command = /^(ig(dl)?|instagram(dl)?)$/i;
+handler.register = true
 
 export default handler;

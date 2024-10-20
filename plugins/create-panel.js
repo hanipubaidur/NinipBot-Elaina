@@ -6,9 +6,9 @@ const format = sizeFormatter()
 let handler = async (m, { conn, args, text, usedPrefix: _p, command, isROwner }) => {
     
     //Manage panel
-    const domain = "${global.domain}" // Domain
-const apikey = "${global.domain}" // Apikey
-const c_apikey = "${global.capikey}" // c Apikey
+    const domain = `${global.domain}` // Domain
+const apikey = `${global.domain}` // Apikey
+const c_apikey = `${global.capikey}` // c Apikey
 
     const webPage = "http://43.133.156.76" // Web Page
     

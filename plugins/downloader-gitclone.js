@@ -14,5 +14,6 @@ handler.tags = ['downloader']
 handler.command = /gitclone/i
 
 handler.limit = true
+handler.register = true
 
 export default handler

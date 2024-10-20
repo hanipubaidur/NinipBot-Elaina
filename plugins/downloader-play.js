@@ -77,4 +77,5 @@ handler.help = ["play"];
 handler.tags = ["downloader"];
 handler.command = /^(play)$/i;
 handler.limit = true;
+handler.register = true
 export default handler;

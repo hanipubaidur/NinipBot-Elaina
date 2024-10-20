@@ -36,6 +36,7 @@ const handler = async (m, { conn, command, text, usedPrefix }) => {
 handler.help = ['igphoto'].map(v => v + ' <url>');
 handler.tags = ['downloader'];
 handler.command = /^(igphotos|igfoto)$/i;
+handler.register = true
 
 export default handler;
 
