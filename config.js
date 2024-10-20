@@ -33,6 +33,7 @@ global.swa = 'https://wa.me/6282183478561' //whatsapp
 global.tele = 'https://t.me/nip.niff' //telegram
 global.sdc = 'https://discord.gg/' //discord
 global.snh = 'https://nhentai.net/' //nhentai
+global.idch = '120363230277050533@newsletter' // ID CHANNEL LU
 
 /*============== PAYMENT ==============*/
 global.pdana = '082183478561' //pulsa1
@@ -43,6 +44,7 @@ global.dana = '082183478561' //dana
 global.sid = 's.id' //s.id
 global.psaweria = 'https://saweria.com/' //saweria
 
+
 /*============== NOMOR ==============*/
 global.nomorwa = '6282183478561' //whatsapp
 global.nomorbot = '6281219288017' //nomor Bot
@@ -52,9 +54,9 @@ global.nameown = 'Ninip Ganteng' //nama Owner
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6282183478561', 'Ninip Ganteng', true] //creator/owner
-] //put your number here
-global.mods = ['6282183478561'] //moderator
+	['6282183478561', 'Ninip Ganteng', true] //creator/owner
+  ] //put your number here
+global.mods = [] //moderator
 global.prems = [] //prem bukan disini
 
 /*============== CPANEL ==============*/
@@ -66,7 +68,7 @@ global.apikey = 'plta_xxxxx' //plta
 global.lolkey = 'akiraa'
 global.xkey = 'd90a9e986e18778b'
 global.xzn = 'konekocyz'
-global.lann = 'ninipbot.betabotz'
+global.lann = ''
 global.xyro = '3WIq7q3CWt'
 
 /*============== API ==============*/
@@ -83,7 +85,7 @@ global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.lolhuman.xyz': 'akiraa', //lolhuman
   'https://skizo.tech': 'konekocyz', //skizo
-  'https://api.betabotz.eu.org': 'ninipbot.betabotz', //betabotz
+  'https://api.betabotz.eu.org': '', //betabotz
   'https://api.xyroinee.xyz': '3WIq7q3CWt' //xyroine
 }
 
