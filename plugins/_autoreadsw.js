@@ -4,7 +4,7 @@ export async function before(m, { isAdmin, isBotAdmin }) {
   // Initialize this.story array if it doesn't exist
   this.story = this.story ? this.story : [];
   
-  const own = nomerown + '@s.whatsapp.net'
+  const own = nomorown + '@s.whatsapp.net'
   const { mtype, text, sender } = m;
   const name = m.sender.split('@')[0];
   const chat = global.db.data.settings[conn.user.jid] || {}
