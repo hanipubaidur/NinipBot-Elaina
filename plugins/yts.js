@@ -81,17 +81,17 @@ let msg = generateWAMessageFromContent(m.chat, {
             isForwarded: true,
             mentionedJid: [m.sender],
             forwardedNewsletterMessageInfo: {
-              newsletterJid: '120363318498252170@newsletter',
+              newsletterJid: igch,
               serverMessageId: null,
-              newsletterName: `RAPIKZ PENGIDAP FICTOPHILIA`,
+              newsletterName: `NinipBot Information ID`,
             },
             gifPlayback: true,
             externalAdReply: {
               showAdAttribution: true,
-              title: "Elaina-ai",
-              body: 'By Rapikz',
+              title: 'Youtube Search',
+              body: wm,
               mediaType: 1,
-              sourceUrl: 'https://chat.whatsapp.com/FEjBYeNt9TrFdBGdckoXE6',
+              sourceUrl: sgc,
               thumbnailUrl: thumb,
               renderLargerThumbnail: true
             }
