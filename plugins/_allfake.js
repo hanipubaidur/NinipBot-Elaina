@@ -15,7 +15,7 @@ handler.all = async function (m) {
 		
                 //global.bg = await (await fetch(img)).buffer()
 		global.doc = pickRandom(["application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/msword", "application/pdf", "application/vnd.android.package-archive", "application/zip"])
-		global.pic = 'https://telegra.ph/file/53d330acaf2bb24790faf.jpg'
+		global.pic = 'https://files.catbox.moe/94xww2.jpg'
 		global.fla = flaaa.getRandom()
                 global.social = pickRandom([global.sgh, global.sig, global.snh, global.sgc]) 
 
@@ -225,7 +225,7 @@ global.fakefb = {
                "groupInviteMessage": {
                    "groupJid": "6282183478561@g.us",
                    "inviteCode": "null",
-                   "groupName": "Ninip BOT v6.4.0 | BOT ON", 
+                   "groupName": "Ninip BOT v7.2.0 | BOT ON", 
                    "caption": wm, 
                    'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
                }

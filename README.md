@@ -8,13 +8,13 @@
 > **Warning**: Jangan Memperjual Belikan Script Ini.
 
 
-<h1 align="center">𝘕𝘪𝘯𝘪𝘱𝘉𝘰𝘵 × 𝘌𝘭𝘢𝘪𝘯𝘢-𝘔𝘋</h1>
+<h1 align="center">ElainaBOT - MD</h1>
 
 <p align="center">
- <a href="#"><img title="𝘕𝘪𝘯𝘪𝘱𝘉𝘰𝘵 × 𝘌𝘭𝘢𝘪𝘯𝘢-𝘔𝘋" src="https://img.shields.io/badge/Whatsapp BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+ <a href="#"><img title="ElainaBOT" src="https://img.shields.io/badge/Whatshapp BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/hanipubaidur"><img title="Author" src="https://img.shields.io/badge/AUTHOR-Ninip_Ganteng-green.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/ImYanXiao"><img title="Author" src="https://img.shields.io/badge/AUTHOR-ImYanXiao-green.svg?style=for-the-badge&logo=github"></a>
 
 ---------
 
@@ -36,7 +36,7 @@
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
 
 ## ```USER REPLIT```
-[![Run on Repl.it](https://repl.it/badge/github.com/hanipubaidur/NinipBot-Elaina)](https://repl.it/github.com/hanipubaidur/NinipBot-Elaina)
+[![Run on Repl.it](https://repl.it/badge/github/ImYanXiao/Elaina-MultiDevice)](https://repl.it/github/ImYanXiao/Elaina-MultiDevice)
 
 ---------
 ## FOR WINDOWS/RDP USER 💻
@@ -62,8 +62,8 @@ Install this tool first before running the script
 ----------
 
 ```bash
-git clone https://github.com/hanipubaidur/NinipBot-Elaina
-cd NinipBot-Elaina
+git clone https://github.com/ImYanXiao/Elaina-MultiDevice
+cd Elaina-MultiDevice
 npm install
 npm update
 ```
@@ -159,5 +159,4 @@ conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/Boc
 * [`Whiskeysockets/Baileys`](https://github.com/WhiskeySockets/Baileys)
 * [`Nurutomo`](https://github.com/Nurutomo)
 * [`BochilGaming`](https://github.com/bochilgaming)
-* [`Erlan`](https://github.com/erlanrahmat)
-* [`Mark HDR`](https://github.com/Mark-HDR)
+* [`Fokus ID`](https://github.com/Fokusdotid) 
