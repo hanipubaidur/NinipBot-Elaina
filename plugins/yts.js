@@ -65,7 +65,7 @@ let msg = generateWAMessageFromContent(m.chat, {
             text: 'YouTube Searching',
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "YouTube Searching"
+            text: wm
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: null,
