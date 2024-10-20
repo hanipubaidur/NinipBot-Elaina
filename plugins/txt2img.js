@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-	let url = `https://api.fumifumi.xyz/api/text2img?query=${text}`
+	let url = `https://widipe.com/v3/text2img?text=${text}`
 	conn.sendFile(m.chat, url, null, `hasil txt2img dari ${text}`, m)
 }
 handler.help = ['txt2img']

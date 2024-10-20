@@ -1,95 +1,120 @@
 import yts from "yt-search"
-import {
-    generateWAMessageFromContent
-} from "@adiwajshing/baileys"
+const { proto, generateWAMessageFromContent, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default;
+
 import { format } from 'util';
 
 let handler = async (m, {
     conn,
     text
 }) => {
-    if (!text) throw "✳️ What do you want me to search for on YouTube?"
-    let results = await yts(text)
-    let tes = results.all
-    let teks = results.all.map(v => {
-        switch (v.type) {
-            case "video":
-                return `
-📹 *Type:* ${v.type}
-🆔 *VideoId:* ${v.videoId}
-🔗 *URL:* ${v.url}
-📺 *Title:* ${v.title}
-📝 *Description:* ${v.description}
-🖼️ *Image:* ${v.image}
-🖼️ *Thumbnail:* ${v.thumbnail}
-⏱️ *Seconds:* ${v.seconds}
-⏰ *Timestamp:* ${v.timestamp}
-⏲️ *Duration Timestamp:* ${v.duration.timestamp}
-⌛ *Duration Seconds:* ${v.duration.seconds}
-⌚ *Ago:* ${v.ago}
-👀 *Views:* ${formatNumber(v.views)}
-👤 *Author Name:* ${v.author.name}
-🔗 *Author URL:* ${v.author.url}
-   `.trim()
-            case "canal":
-                return `
-🔖 *${v.name}* (${v.url})
-⚡ ${v.subCountLabel} (${v.subCount}) Suscribe
-📽️ ${v.videoCount} videos
-`.trim()
-        }
-    }).filter(v => v).join("\n\n________________________\n\n")
-    
-        let ytthumb = await (await conn.getFile(tes[0].thumbnail)).data
-        let msg = await generateWAMessageFromContent(m.chat, {
-            extendedTextMessage: {
-                text: teks,
-                jpegThumbnail: ytthumb,
-                contextInfo: {
-                    mentionedJid: [m.sender],
-                    externalAdReply: {
-                        body: "S E A R C H",
-                        containsAutoReply: true,
-                        mediaType: 1,
-                        mediaUrl: tes[0].url,
-                        renderLargerThumbnail: true,
-                        showAdAttribution: true,
-                        sourceId: "WudySoft",
-                        sourceType: "PDF",
-                        previewType: "PDF",
-                        sourceUrl: tes[0].url,
-                        thumbnail: ytthumb,
-                        thumbnailUrl: tes[0].thumbnail,
-                        title: htki + " Y O U T U B E " + htka
-                    }
-                }
+let anu = (await yts(text)).all
+let video = anu.filter(v => v.type === 'video') 
+let channel = anu.filter(v => v.type === 'channel') 
+let teks = `${channel.map(v => `*${v.name}* (${v.url})\n_${v.subCountLabel} (${v.subCount}) Subscriber_\n${v.videoCount} video\n────────────────`.trim()
+
+).join("\n")}`+`${video.map(v =>  `*${v.title}* (${v.url})\nDuration: ${v.timestamp}\nUploaded ${v.ago}
+\n${v.views} views\n─────────────────`.trim() ).join("\n")}`
+let image = 'https://telegra.ph/file/c7d54daa8644eeaa1bb2f.jpg';
+
+let sections = [{
+		title: 'Youtube Search', 
+		highlight_label: 'start chats', 
+		rows: [{
+			header: '', 
+	title: "Menu Awal",
+	description: `Display Kembali Ke Menu Utama`, 
+	id: '.menu'
+	},
+	{
+		header: '', 
+		title: "Owner Bot", 
+		description: "Owner bot, pemilik Elaina", 
+		id: '.owner'
+	}]
+}]
+
+video.forEach(async(data) => {
+sections.push({
+	title: data.title, 
+	rows: [{
+		title: "Get Video", 
+		description: `Get video from "${data.title}"`, 
+		id: `.ytmp4 ${data.url}`
+		}, 
+		{
+		title: "Get Audio", 
+		description: `Get audio from "${data.title}"`, 
+		id: `.ytmp3 ${data.url}`
+		}]
+	}) 
+}) 
+let listMessage = {
+    title: 'Click here!', 
+    sections
+};
+
+let msg = generateWAMessageFromContent(m.chat, {
+  viewOnceMessage: {
+      message: {
+        "messageContextInfo": {
+          "deviceListMetadata": {},
+          "deviceListMetadataVersion": 2
+        },
+        interactiveMessage: proto.Message.InteractiveMessage.create({
+          body: proto.Message.InteractiveMessage.Body.create({
+            text: 'YouTube Searching',
+          }),
+          footer: proto.Message.InteractiveMessage.Footer.create({
+            text: "YouTube Searching"
+          }),
+          header: proto.Message.InteractiveMessage.Header.create({
+            title: null,
+            hasMediaAttachment: true,
+            ...(
+              await prepareWAMessageMedia({
+                image: { url: image},
+              }, { upload: conn.waUploadToServer })
+            )
+          }),
+          contextInfo: {
+            forwardingScore: 2024,
+            isForwarded: true,
+            mentionedJid: [m.sender],
+            forwardedNewsletterMessageInfo: {
+              newsletterJid: '120363318498252170@newsletter',
+              serverMessageId: null,
+              newsletterName: `RAPIKZ PENGIDAP FICTOPHILIA`,
+            },
+            gifPlayback: true,
+            externalAdReply: {
+              showAdAttribution: true,
+              title: "Elaina-ai",
+              body: 'By Rapikz',
+              mediaType: 1,
+              sourceUrl: 'https://chat.whatsapp.com/FEjBYeNt9TrFdBGdckoXE6',
+              thumbnailUrl: thumb,
+              renderLargerThumbnail: true
             }
-        }, {
-            quoted: m
+          },
+          nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+            buttons: [
+              {
+                "name": "single_select",
+                "buttonParamsJson": JSON.stringify(listMessage) 
+              }, 
+           ],
+          })
         })
-        await conn.relayMessage(m.chat, msg.message, {})
+    }
+  }
+}, {})
+
+await conn.relayMessage(msg.key.remoteJid, msg.message, {
+  messageId: msg.key.id
+})
 }
-handler.help = ["", "earch"].map(v => "yts" + v + " <pencarian>")
+
+handler.help = ["yts", "search"].map(v => "yts" + v + " <pencarian>")
 handler.tags = ["tools"]
-handler.command = /^y(outubesearch|ts(earch)?)$/i
+handler.command = /^(ytsearch|yts)$/i
 export default handler
-
-function formatNumber(num) {
-  const suffixes = ['', 'k', 'M', 'B', 'T'];
-  const numString = Math.abs(num).toString();
-  const numDigits = numString.length;
-
-  if (numDigits <= 3) {
-    return numString;
-  }
-
-  const suffixIndex = Math.floor((numDigits - 1) / 3);
-  let formattedNum = (num / Math.pow(1000, suffixIndex)).toFixed(1);
-  
-  // Menghapus desimal jika angka sudah bulat
-  if (formattedNum.endsWith('.0')) {
-    formattedNum = formattedNum.slice(0, -2);
-  }
-
-  return formattedNum + suffixes[suffixIndex];
-}

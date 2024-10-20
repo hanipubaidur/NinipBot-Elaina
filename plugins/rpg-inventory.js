@@ -72,7 +72,7 @@ let health = global.db.data.users[m.sender].health
     let hero = global.db.data.users[m.sender].hero
     let exphero = global.db.data.users[m.sender].exphero
     let who = m.sender
-    let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
+   let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     let name = m.sender
     let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
     let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)

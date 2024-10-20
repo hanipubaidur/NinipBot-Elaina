@@ -1,34 +1,34 @@
 let handler = async(m, { conn, text, usedPrefix, command}) => {
   if (!text) return conn.reply(m.chat, `*— PRICELIST*\n\n*7 Day join the group*\n- OrderID: G7\n- Price: Rp. 7.000 IDR\n\n*30 Day join the group*\n- OrderID: G30\n- Price: Rp. 15.000 IDR\n\n*365 Day join the group*\n- OrderID: G365\n- Price: Rp. 110.000 IDR\n\n*— LIMIT*\n\n*1000 Limit*\n- OrderID: L1\n- Price: Rp. 1.000 IDR\n\n*2000 Limit*\n- OrderID: L2\n- Price: Rp. 2.000 IDR\n\n*5000 Limit*\n- OrderID: L5\n- Price: Rp. 5.000 IDR\n\n*— PREMIUM USER*\n\n*3 Day premium*\n- OrderID: 3\n- Price: Rp. 5.000 IDR\n\n*7 Day premium*\n- OrderID: 7\n- Price: Rp. 10.000 IDR\n\n*30 Day premium*\n- OrderID: 30\n- Price: Rp. 15.000 IDR\n\n*60 Day premium*\n- OrderID: 60\n- Price: Rp. 30.000 IDR\n\n*90 Day premium*\n- OrderID: 90\n- Price: Rp. 40.000 IDR\n\n*365 Day premium*\n- OrderID: 365\n- Price: Rp. 115.000 IDR\n\n${usedPrefix + command} <OrderID>\nexample: ${usedPrefix + command} 30`, m)
-  let orderID;
+    let orderID;
 
-switch(text) {
-    case '3':
-    orderID = '3';
-    break;
-    case '7':
-    orderID = '7';
-    break;
-    case '30':
-    orderID = '30';
-    break;
-    case '60':
-    orderID = '60';
-    break;
-     case '90':
-    orderID = '90';
-    break;
-     case '365':
-    orderID = '365';
-    break;
-    case 'G7':
-    orderID = 'G7';
-    break;
-    case 'G30':
-    orderID = 'G30';
-    break;
-    case 'G365':
-    orderID = 'G365';
+  switch(text) {
+      case '3':
+      orderID = '3';
+      break;
+      case '7':
+      orderID = '7';
+      break;
+      case '30':
+      orderID = '30';
+      break;
+      case '60':
+      orderID = '60';
+      break;
+       case '90':
+      orderID = '90';
+      break;
+       case '365':
+      orderID = '365';
+      break;
+      case 'G7':
+      orderID = 'G7';
+      break;
+      case 'G30':
+      orderID = 'G30';
+      break;
+      case 'G365':
+      orderID = 'G365';
     break;
     case 'L1':
     orderID = 'L1';
@@ -37,10 +37,10 @@ switch(text) {
     orderID = 'L2';
     case 'L5':
     orderID = 'L5';
-    break;
-    default:
-    throw `*OrderID* yang dipilih tidak tersedia, Silahkan pilih *OrderID* di bawah.
-    
+      break;
+      default:
+      throw `*OrderID* yang dipilih tidak tersedia, Silahkan pilih *OrderID* di bawah.
+      
 *— PRICELIST JOIN GROUP*
 
 *7 Day join the group*
@@ -82,11 +82,11 @@ switch(text) {
 - OrderID: 365
 - Price: Rp. 115.000 IDR
 `;
-};
-  var nomor = m.sender
+  };
+    var nomor = m.sender
   const teks1 = `*[ ＯＲＤＥＲＡＮ ＭＡＳＵＫ ]*\nNomor : wa.me/${nomor.split("@s.whatsapp.net")[0]}\nORDER : ${orderID}`
   conn.reply('6282183478561@s.whatsapp.net', teks1, m)
-  conn.reply(m.chat, '✔️ Orderan mu sudah di kirim ke OWNER, Harap tunggu pesan dari OWNER', m)
+    conn.reply(m.chat, '✔️ Orderan mu sudah di kirim ke OWNER, Harap tunggu pesan dari OWNER', m)
 }
 handler.help = ['order'];
 handler.tags = ['main'];

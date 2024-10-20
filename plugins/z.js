@@ -4,7 +4,7 @@ import { readFileSync, unlinkSync } from 'fs';
 import { join } from 'path';
 
 const defaultLang = 'id';
-const openaiApiUrl = 'https://widipe.com/gpt4?text=';
+const openaiApiUrl = 'https://widipe.com/gemini?text=';
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   let lang = args[0];

@@ -35,7 +35,7 @@ async function fakechat(text, name, url) {
     let body = {
         "type": "quote",
         "format": "webp",
-        "backgroundColor": "#000000",
+        "backgroundColor": "#FFFFFF",
         "width": 512,
         "height": 512,
         "scale": 2,
@@ -61,7 +61,7 @@ async function fakechatImg(url, text, name, avatar) {
     let body = {
         "type": "quote",
         "format": "png",
-        "backgroundColor": "#000000",
+        "backgroundColor": "#FFFFFF",
         "width": 512,
         "height": 768,
         "scale": 2,
