@@ -24,7 +24,7 @@ let handler = async (m, {
 }
 handler.help = ['rkick', '-'].map(v => 'g' + v + ' @user')
 handler.tags = ['owner']
-handler.command = /^(rkick|replykick|kickreply)$/i
+handler.command = /^(rkick|rkik|replykick|kickreply)$/i
 
 handler.owner = true
 handler.group = true

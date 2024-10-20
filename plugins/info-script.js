@@ -42,7 +42,7 @@ let msg = generateWAMessageFromContent(m.chat, {
             buttons: [            
                                           {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"KUNJUNGI WEBSITE\",\"url\":\"https://github.com/hanipubaidur/NinipBot-Elaina\",\"merchant_url\":\"https://github.com/hanipubaidur/NinipBot-Elaina\"}"
+                 "buttonParamsJson": "{\"display_text\":\"KLIK AJA😹\",\"url\":\"https://github.com/hanipubaidur/NinipBot-Elaina\",\"merchant_url\":\"https://github.com/hanipubaidur/NinipBot-Elaina\"}"
               }
            ],
           })
@@ -56,7 +56,7 @@ await conn.relayMessage(msg.key.remoteJid, msg.message, {
 })
 
 let tags = {
-'reyzmenu': { }
+'memek': { }
 }
  
   /*try {

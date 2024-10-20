@@ -13,4 +13,5 @@ ${res.result}
 handler.command = handler.help = ['ai','openai','gpt'];
 handler.tags = ['tools'];
 handler.premium = false;
+handler.register = true
 export default handler;

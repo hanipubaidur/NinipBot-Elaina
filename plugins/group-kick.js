@@ -21,7 +21,7 @@ let handler = async (m, { conn, participants, isAdmin }) => {
 
 handler.help = ['kick'].map(v => v + ' @user')
 handler.tags = ['group']
-handler.command = /^(kick)$/i
+handler.command = /^(kick|kik)$/i
 
 handler.owner = false
 handler.group = true
