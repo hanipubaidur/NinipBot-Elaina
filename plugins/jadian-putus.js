@@ -1,3 +1,4 @@
+
 let handler = async (m, { conn }) => {
   var ayg = global.db.data.users[m.sender]
   var beb = global.db.data.users[global.db.data.users[m.sender].pasangan]

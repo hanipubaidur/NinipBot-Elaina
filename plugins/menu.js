@@ -52,7 +52,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: { url: "https://telegra.ph/file/2484729e42ff269a99fe8.jpg" } }, { upload: conn.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: { url: "https://i.pinimg.com/originals/a4/35/81/a43581c3034771dba7e18151d15ce79e.jpg" } }, { upload: conn.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{

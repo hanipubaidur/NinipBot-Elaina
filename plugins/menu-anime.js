@@ -117,8 +117,19 @@ let anu =`
 ╠➺   .ᴍᴇɢᴜᴍɪɴ
 ╚═─━╍╍━╍╾
 `
-await m.reply(anu)
-}
+await conn.sendMessage(m.chat, {
+  text: `${anu}`,
+      contextInfo: {
+      externalAdReply: {
+        title: 'MENU LIST',
+        body: wm,
+        thumbnailUrl: 'https://telegra.ph/file/94b9d0b5ef233c97e00e1.jpg',
+        sourceUrl: saluran,
+        mediaType: 1,
+        renderLargerThumbnail: true, 
+        showAdAttribution: true
+      }}
+  })}
 handler.help = ['menuanime']
 handler.tags = ['info']
 handler.command = /^(menuanime)$/i
