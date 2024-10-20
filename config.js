@@ -90,7 +90,7 @@ global.APIKeys = { // APIKey Here
 }
 
 /*============== VERSION ==============*/
-global.version = '6.4.0'
+global.version = '7.2.0'
 
 /*============== WATERMARK ==============*/
 global.wm = '𝘕𝘪𝘯𝘪𝘱𝘉𝘰𝘵 × 𝘌𝘭𝘢𝘪𝘯𝘢-𝘔𝘋' //wm1
