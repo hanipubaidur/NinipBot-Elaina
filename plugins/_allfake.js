@@ -17,7 +17,7 @@ handler.all = async function (m) {
 		global.doc = pickRandom(["application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/msword", "application/pdf", "application/vnd.android.package-archive", "application/zip"])
 		global.pic = 'https://i.pinimg.com/736x/7c/80/eb/7c80eb7a7aacd359ccbd678fbca6a565.jpg'
 		global.fla = flaaa.getRandom()
-                global.social = pickRandom([global.sgh, global.sig, global.snh, global.sgc]) 
+                global.social = pickRandom([global.sgh, global.sig, global.snh, global.sgc, global.stt]) 
 
 		// Module 
 		global.fetch = (await import('node-fetch')).default
