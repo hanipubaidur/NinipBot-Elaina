@@ -13,11 +13,12 @@ let handler = async (m, { conn, participants }) => {
 }
 handler.help = ['kick', '-'].map(v => 'o' + v + ' @user')
 handler.tags = ['owner']
-handler.command = /^(okick|o-)$/i
+handler.command = /^(okick|okik|o-)$/i
 
 handler.admin = true
 handler.group = true
 handler.botAdmin = true
+handler.owner = true
 
 export default handler
 
