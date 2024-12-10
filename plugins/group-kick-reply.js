@@ -26,7 +26,8 @@ handler.help = ['rkick', '-'].map(v => 'g' + v + ' @user')
 handler.tags = ['owner']
 handler.command = /^(kik)$/i
 
-handler.owner = true
+handler.owner = false
+handler.admin = true
 handler.group = true
 handler.botAdmin = true
 
